@@ -1,0 +1,45 @@
+<project name="test" basedir="." default="CallJava">
+    <path id="classpath">
+        <!-- To refer the all the jars inside folder lib -->
+        <fileset dir="${basedir}/lib">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+<!--
+ <taskdef name="customTask" classname="com.wordpress.rathinasaba.ant.CustomAntTask">
+ <classpath>
+ <pathelement location="${basedir}/lib/CustomAntTask.jar" />
+ </classpath>
+ </taskdef>
+ 
+ -->
+    <!-- ================================================================================================-->
+    <!--        TARGET: CallJava [ This target will call Java ( CustomAntTask.java )]                    -->
+    <!-- ================================================================================================ -->
+    <target name="CallJava">
+        <echo message="=========================================================="/>
+        <echo message="                Calling Custom Java Task                       "/>
+        <echo message="=========================================================="/>
+        <customTask />
+    </target>
+    
+    <!-- ================================================================================ -->
+    <!--         TARGET: deploy [ This target will be called from java ]                  -->
+    <!-- ================================================================================ -->
+    <target name="deploy">
+        <echo message="=========================================================="/>
+        <echo message="   Populating the environment property value from Java    "/>
+        <echo message="=========================================================="/>
+        
+        <property environment="BPEL.HOST" />
+        <property environment="OSB.HOST" />
+        <property environment="BPEL.HostPort" />
+        <property environment="OSB.HostPort" />
+        
+        <echo message="BPEL HOST : ${BPEL.HOST}" />
+        <echo message="OSB HOST : ${OSB.HOST}" />
+        <echo message="BPEL Host Port : ${BPEL.HostPort}" />
+        <echo message="OSB host Port : ${OSB.HostPort}" />
+    </target>
+</project>

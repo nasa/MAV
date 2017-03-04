@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AIRPORTS>
+    <airport latitude="37.618889" longitude="-122.375" name="SFO_">
+        <runway name="SFO" qfu="28"/>
+    </airport>
+    <airport latitude="40.78528" longitude="-73.87055" name="LGA">
+        <runway name="LGA22" qfu="22"/>
+        <runway name="LGA04" qfu="4"/>
+        <runway name="LGA13" qfu="13"/>
+        <runway name="LGA31" qfu="31"/>
+    </airport>
+    <airport latitude="40.639722" longitude="-73.778889" name="JFK">
+        <runway name="JFK04L" qfu="4"/>
+        <runway name="JFK04R" qfu="4"/>
+        <runway name="JFK22L" qfu="22"/>
+        <runway name="JFK22R" qfu="22"/>
+        <runway name="JFK13L" qfu="13"/>
+        <runway name="JFK13R" qfu="13"/>
+        <runway name="JFK31L" qfu="31"/>
+        <runway name="JFK31R" qfu="31"/>
+    </airport>
+    <airport latitude="40.6925" longitude="-74.168611" name="EWR">
+        <runway name="EWR04L" qfu="4"/>
+        <runway name="EWR04R" qfu="4"/>
+        <runway name="EWR22L" qfu="22"/>
+        <runway name="EWR22R" qfu="22"/>
+        <runway name="EWR11" qfu="11"/>
+        <runway name="EWR29" qfu="29"/>
+    </airport>
+    <airport latitude="35.213889" longitude="-80.943056" name="CLT">
+        <runway name="CLT05" qfu="5"/>
+        <runway name="CLT23" qfu="23"/>
+        <runway name="CLT18L" qfu="18"/>
+        <runway name="CLT18C" qfu="18"/>
+        <runway name="CLT18R" qfu="18"/>
+        <runway name="CLT36L" qfu="36"/>
+        <runway name="CLT36C" qfu="36"/>
+        <runway name="CLT36R" qfu="36"/>
+    </airport>
+    <airport latitude="42.363056" longitude="-71.006389" name="BOS">
+        <!-- NOT COMPLETE -->
+        <runway name="BOS22" qfu="22"/>
+        <runway name="BOS15" qfu="15"/>
+        <runway name="BOS14" qfu="14"/>
+        <runway name="BOS04" qfu="4"/>
+        <runway name="BOS09" qfu="9"/>
+        <runway name="BOS33" qfu="33"/>
+        <runway name="BOS27" qfu="27"/>
+    </airport>
+    <airport latitude="39.871944" longitude="-75.241111" name="PHL">
+        <!-- NOT COMPLETE -->
+        <runway name="PHL09" qfu="9"/>
+        <runway name="PHL17" qfu="17"/>
+        <runway name="PHL08" qfu="8"/>
+        <runway name="PHL26" qfu="26"/>
+        <runway name="PH27L" qfu="27"/>
+        <runway name="PHL35" qfu="35"/>
+    </airport>
+    <airport latitude="39.175278" longitude="-76.668333" name="BWI">
+        <!-- NOT COMPLETE -->
+        <runway name="BWI10" qfu="10"/>
+        <runway name="BWI15" qfu="15"/>
+        <runway name="BWI33" qfu="33"/>
+        <runway name="BWI28" qfu="28"/>
+    </airport>
+    <airport latitude="38.852222" longitude="-77.037778" name="DCA">
+        <!-- NOT COMPLETE -->
+        <runway name="DCA19" qfu="19"/>
+        <runway name="DCA22" qfu="22"/>
+        <runway name="DCA33" qfu="33"/>
+        <runway name="DCA01" qfu="1"/>
+        <runway name="DCA01" qfu="4"/>
+        <runway name="DCA15" qfu="15"/>
+    </airport>
+</AIRPORTS>
+

@@ -1,0 +1,6 @@
+=== Data module
+
+
+Contains a few sample scenario files from DSAS as well as the geography, waypoint files currently used.
+
+This documentation part describes the structure of the different files handled in this project.

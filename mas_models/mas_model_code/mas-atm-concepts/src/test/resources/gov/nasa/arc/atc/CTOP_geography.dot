@@ -1,0 +1,45 @@
+digraph G {
+
+    A_1 [shape=box];
+    A_2 [shape=box];
+    A_3 [shape=box];
+    A_4 [shape=box];
+
+    A1_R1 [shape=invtriangle];
+    A2_R1 [shape=invtriangle];
+    A3_R1 [shape=invtriangle];
+    A4_R1 [shape=invtriangle];
+    A4_R2 [shape=triangle];
+
+    A_1 -> A1_R1 [style=dotted];
+    A_2 -> A2_R1 [style=dotted];
+    A_3 -> A3_R1 [style=dotted];
+    A_4 -> A4_R1 [style=dotted];
+    A_4 -> A4_R2 [style=dotted];
+    A4_R2 -> A_4 [style=dotted];
+
+    A1_R1 -> A;
+    A -> B;
+    B -> C;
+    C -> D [penwidth=3];
+    D -> E [penwidth=3];
+    E -> F;
+    F -> G;
+    G -> A4_R2[style=dotted];
+
+    A2_R1 -> AA;
+    AA -> BB;
+    BB -> C;
+
+    A3_R1 -> AAA;
+    AAA -> BBB;
+    BBB -> CCC;
+    CCC -> DDD [penwidth=3];
+    DDD -> EEE [penwidth=3];
+    EEE -> FFF;
+    FFF -> G;
+
+
+    A4_R2 -> Z;
+    Z -> Y;
+ }

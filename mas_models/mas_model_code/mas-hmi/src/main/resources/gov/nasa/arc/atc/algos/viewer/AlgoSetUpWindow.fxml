@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="TSS configuration" />
+      <Label layoutX="585.0" layoutY="14.0" text="DSAS configuration" />
+      <TableView layoutX="20.0" layoutY="46.0" prefHeight="134.0" prefWidth="332.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Arrival Node" />
+          <TableColumn prefWidth="100.0" text="Nb Arrivals" />
+            <TableColumn prefWidth="75.0" text="TSS" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.2505567928730512" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.nasa.arc.atc.viewer.RawViewerController">
+   <items>
+      <AnchorPane>
+         <children>
+            <ListView fx:id="afoList" prefHeight="323.0" prefWidth="205.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <CheckBox fx:id="departureCheckB" layoutX="14.0" layoutY="366.0" mnemonicParsing="false" text="Departures" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+            <CheckBox fx:id="arrivalCheckB" layoutX="16.0" layoutY="337.0" mnemonicParsing="false" text="Arrivals" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="14.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="updatesTable" prefHeight="200.0" prefWidth="200.0" />
+   </items>
+</SplitPane>

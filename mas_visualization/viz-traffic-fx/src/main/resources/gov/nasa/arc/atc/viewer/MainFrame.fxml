@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import org.controlsfx.control.SegmentedButton?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.nasa.arc.atc.viewer.MainFrameController">
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar minHeight="30.0" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="434.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleEditConfigurationAction" text="Select Files" />
+                    <MenuItem mnemonicParsing="false" onAction="#handleCloseAction" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleOpenViewerAction" text="Open Report Viewer" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleViewSpecsAction" text="Open Simulation Specs Viewer" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleImageCreatorAction" text="Open Image Creator" />
+                        <MenuItem mnemonicParsing="false" onAction="#displayRawData" text="View Raw Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#displayFlightPlans" text="View Flight Plans" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Errors">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleViewErrorLog" text="View Error Log" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar fx:id="mainToolBar" layoutX="166.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <SegmentedButton fx:id="segmentedButton">
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </SegmentedButton>
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

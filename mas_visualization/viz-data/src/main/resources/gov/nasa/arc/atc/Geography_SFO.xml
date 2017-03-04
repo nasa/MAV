@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GEOGRAPHY>
+  <Waypoints>
+    <waypoint latitude="37.816301" longitude="-122.478080" name="GGB"/>
+    <waypoint latitude="37.403254" longitude="-121.969359" name="LVS"/>
+    <waypoint latitude="37.320023" longitude="-121.912458" name="HMN"/>
+    <waypoint latitude="37.900721" longitude="-122.649600" name="SBT"/>
+    <waypoint latitude="37.881565" longitude="-121.913790" name="DIABLO"/>
+    <waypoint latitude="36.957470" longitude="-122.017412" name="SCW"/>
+  </Waypoints>
+  <Airports>
+    <airport latitude="37.618889" longitude="-122.375" name="SFO_">
+      <runway name="SFO" qfu="28"/>
+    </airport>
+  </Airports>
+  <Sectors/>
+  <Arrivals>
+    <arrival name="SFO"/>
+  </Arrivals>
+  <Departures>
+    <departure name="SFO"/>
+  </Departures>
+  <Segments>
+    <!--<segment fromWaypoint="RABBA" toWaypoint="RENUE"/>-->
+
+  </Segments>
+  <Sectors>
+    <!--<sector name="Haarp" id="1">-->
+      <!--<region minAltitude="0" maxAltitude="10000">-->
+        <!--<edge latitude="41.18475863562952" longitude="-73.7761583116883" />-->
+        <!--<edge latitude="41.31145039887349" longitude="-73.85529207792207" />-->
+        <!--<edge latitude="41.3027262204939" longitude="-73.79989844155844" />-->
+        <!--<edge latitude="41.34414868499383" longitude="-73.60733961038962" />-->
+        <!--<edge latitude="41.245971464142684" longitude="-73.56777272727273" />-->
+        <!--<edge latitude="41.23067723587523" longitude="-73.47808779220779" />-->
+        <!--<edge latitude="41.05107022304324" longitude="-73.4728122077922" />-->
+        <!--<edge latitude="40.89929963467954" longitude="-73.39895402597402" />-->
+        <!--<edge latitude="40.905910496097114" longitude="-73.52556805194806" />-->
+        <!--<edge latitude="40.98295563911018" longitude="-73.64954428571428" />-->
+        <!--<edge latitude="40.98955251941655" longitude="-73.77352051948051" />-->
+      <!--</region>-->
+    <!--</sector>-->
+
+  </Sectors>
+</GEOGRAPHY>

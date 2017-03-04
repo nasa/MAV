@@ -1,0 +1,9 @@
+=== JavaFX Traffic visualization
+
+
+image::trafficviz/trafficViz.png[scaledwidth=90]
+
+
+
+IMPORTANT: depends on `viz-data`, `viz-core` and `viz-metrics`
+

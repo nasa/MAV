@@ -1,0 +1,180 @@
+<project name="ActiveFrameTest" default="brahms-sim" basedir=".">
+  <description>
+	TODO: create description of build and product
+  </description>
+
+
+  <!-- set global properties for this build -->
+  <property environment="env"/>
+  <property name="dir.build"       location="./build"/>
+  <property name="dir.bae_root"    value="/Applications/Brahms/AgentEnvironment"/>
+  <property name="dir.src"	 	   value="./source"/>
+  <property name="src.name"        value="ActiveFrameTest"/>
+  <property name="src.file"		   value="${dir.src}/${src.name}.b"/>
+
+  <!-- ************************************************************ -->
+  <!-- init                                                         -->
+  <!-- ************************************************************ -->
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <mkdir dir="${dir.build}"/>
+  </target>
+  <!-- ************************************************************ -->
+
+  <!-- ************************************************************ -->
+  <!-- clean                                                        -->
+  <!-- ************************************************************ -->
+  <target name="clean"
+    	  description="Cleans up the output directories">
+	<delete dir="${dir.build}"/>
+  </target>
+  <!-- ************************************************************ -->
+
+
+  <!-- ************************************************************ -->
+
+  <!-- ************************************************************ -->
+  <!-- brahms-compile                                               -->
+  <!-- ************************************************************ -->
+  <property name="dir.dtd"         value="${dir.bae_root}/DTD"/>
+  <property name="jar.baecommon"   value="${dir.bae_root}/lib/common.jar"/>
+  <property name="jar.baebc"       value="${dir.bae_root}/lib/bc.jar"/>
+  <property name="jar.baevm"       value="${dir.bae_root}/lib/vm.jar"/>
+  <property name="jar.baedtc"      value="${dir.bae_root}/lib/DoctypeChanger.jar"/>
+  <property name="jar.baelog4j"    value="${dir.bae_root}/lib/log4j-1.2.15.jar"/>
+
+  <path id="librarypath.common">
+	<pathelement location="${dir.bae_root}/Models/lib"/>
+	<pathelement location="${dir.build}"/>
+  </path>
+
+  <path id="classpath.common">
+   	<pathelement location="${jar.baecommon}"/>
+   	<pathelement location="${jar.baebc}"/>
+   	<pathelement location="${jar.baevm}"/>
+	<pathelement location="${jar.baedtc}"/>
+   	<pathelement location="${jar.baelog4j}"/>
+	<pathelement location="./../../../bin"/>
+  </path>
+
+  <taskdef
+	  name="bc"
+	  classname="gov.nasa.arc.brahms.bc.ant.BC">
+	<classpath refid="classpath.common" />
+  </taskdef>
+
+  <target name="brahms-compile" 
+    	  description="Compiles the source code located in ${dir.src} to {$dir.build}">
+
+    <!-- Compile the Brahms code from ${dir.src} into ${dir.build} -->
+	<!-- To add bar file creation: barfile=$fname -->
+    <bc srcdir="${dir.src}"
+        destdir="${dir.build}"
+        dtddir="${dir.dtd}"
+        srcfile="${src.file}">
+      <librarypath refid="librarypath.common"/>
+    </bc>
+  </target>
+  <!-- ************************************************************ -->
+
+  <!-- ************************************************************ -->
+  <!-- brahms-sim                                                   -->
+  <!-- ************************************************************ -->
+  <property name="bvm.exec" value="./bvm"/>
+
+  <target name="brahms-sim" depends="brahms-compile"
+		  description="Simulates the model in Brahms BVM">
+	<exec executable="${bvm.exec}">
+	  <!-- CP does not work in general -->
+	  <env key="CP" value="./../../bin"/>
+	  <env key="EXT_JAR_DIRS" value="./build/"/>
+	  <arg value="-cf vm.cfg"/>
+	  <arg value="-mode sim"/>
+	  <arg value="${src.name}"/>
+	</exec>
+  </target>
+
+  <!-- BETA: invokes the BVM as a Java task rather than exec -->
+  <!-- KNOWN ISSUES:                                         -->
+  <!--    * Cannot find license file                         -->
+  <!--    * Does not accepts more than one argument          -->
+  <property name="xboot"
+			value="${dir.bae_root}/lib/jacorb/jacorb.jar:${dir.bae_root}/lib/jacorb/logkit-1.2.jar:${dir.bae_root}/lib/jacorb/avalon-framework-4.1.5.jar"/>
+
+  <property name="ext_jar_dirs"
+			value="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/lib/ext:${dir.bae_root}/lib:${dir.bae_root}/lib/apache:${dir.bae_root}/lib/ci:${dir.bae_root}/lib/jacorb:${dir.bae_root}/lib/jidesoft:${dir.bae_root}/lib/mysql:${dir.bae_root}/lib/nss:${dir.bae_root}/deploy:${dir.bae_root}/Agents:../../bin"/>
+
+  <path id="classpath.bvm">
+	<pathelement location="${dir.bae_root}/config"/>
+	<pathelement location="${dir.bae_root}/deploy"/>
+	<pathelement location="${dir.bae_root}/Agents"/>
+  </path>
+
+  <target name="brahms-sim-java" depends="init,brahms-compile"
+		  description="Invokes the brahms simulator">
+	<java classname="gov.nasa.arc.brahms.vm.bvm"
+		  fork="true"
+		  newenvironment="true"
+		  dir="."
+		  classpathref="classpath.bvm">
+	  <env key="BRAHMS_ROOT" value="/Applications/Brahms/AgentEnvironment"/>
+	  <jvmarg value="-Xincgc -Xmx512m -Xss1024k -Xms32m"/>
+	  <jvmarg value="-Xbootclasspath/p:${xboot}"/>
+	  <jvmarg value="-Djava.ext.dirs=${ext_jar_dirs}"/>
+	  <jvmarg value="-Dorg.omg.CORBA.ORBClass=org.jacorb.orb.ORB"/>
+	  <jvmarg value="-Dorg.omg.CORBA.ORBSingletonClass=org.jacorb.orb.ORBSingleton"/>
+	  <arg value="-cf vm.cfg"/>
+	  <arg value="${src.name}"/>
+	</java>
+  </target>
+  <!-- ************************************************************ -->
+
+  <!-- ************************************************************ -->
+  <!-- GetFiles                                                     -->
+  <!-- ************************************************************ -->
+  <property name="java.build" location="./../../../bin"/>
+  <property name="dir.lib_root" location ="../../../lib"/>
+  <property name="jar.commonio" location="${dir.lib_root}/commons-io-2.4.jar"/>
+
+  <target name="GetFiles" depends="brahms-compile"
+		  description="GetFiles: build the Brahms-translate mode">
+	<delete dir="${dir.build}/${src.name}"/>
+    <java fork="true" failonerror="yes" classname="blocks.GetFiles">
+      <classpath>
+    	<pathelement location="${java.build}"/>
+		<pathelement location= "${jar.commonio}"/>
+      </classpath>
+	  <arg value="./GetFiles.cfg"/>
+    </java>
+	<mkdir dir="${dir.build}/classes"/>
+	<javac srcdir="${dir.build}"
+		   includeantruntime="false"
+		   destdir="./build/classes">
+	  <classpath>
+    	<pathelement location="${java.build}"/>
+		<pathelement location= "${jar.commonio}"/>
+      </classpath>
+	</javac>
+  </target>
+  <!-- ************************************************************ -->
+
+  <!-- ************************************************************ -->
+  <!-- brahms-translate-sim                                         -->
+  <!-- ************************************************************ -->
+  <property name="jar.log" location="${dir.lib_root}/log4j-1.2.15.jar"/>
+
+  <target name="brahms-translate-sim" depends="GetFiles"
+		  description="Runs the brahms-translate simulator">
+    <java fork="true" failonerror="yes" classname="${src.name}.${src.name}Main">
+      <classpath>
+		<pathelement location="./build/classes"/>
+        <pathelement location="${jar.log}"/>
+		<pathelement location="${jar.commonio}"/>
+		<pathelement location="../../../bin"/>
+      </classpath>
+    </java>
+  </target>
+  <!-- ************************************************************ -->
+
+</project>

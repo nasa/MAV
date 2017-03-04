@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.nasa.arc.atc.parametrized.ConfiguratorFXController">
+   <content>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="8.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Import library" />
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label prefHeight="25.0" text="Scenario" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="14.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="25.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="25.0" text="Scenario Type:" />
+                  <ComboBox fx:id="scenarioTypeComboB" prefWidth="150.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="28.0" right="28.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox fx:id="scenarioConfigVBox" maxWidth="1.7976931348623157E308" />
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="25.0" text="Algorithms">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+            </Label>
+            <HBox maxWidth="1.7976931348623157E308" spacing="8.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <ListView fx:id="algorithmCreatorList" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                  <VBox spacing="8.0" HBox.hgrow="NEVER">
+                     <children>
+                        <Button fx:id="createAlgoButton" disable="true" mnemonicParsing="false" onAction="#onCreateAlgorithm" text="Create" VBox.vgrow="NEVER" />
+                     </children>
+                     <padding>
+                        <Insets top="14.0" />
+                     </padding>
+                  </VBox>
+                  <ListView fx:id="algoSequenceListView" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="SOMETIMES" />
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" spacing="8.0" HBox.hgrow="NEVER">
+                     <children>
+                        <Button fx:id="upButton" disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="55.0" text="Up" VBox.vgrow="SOMETIMES" />
+                        <Button fx:id="downButton" disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="55.0" text="Down" VBox.vgrow="SOMETIMES" />
+                        <Button fx:id="removeButton" disable="true" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRemoveAlgorithmAction" text="Remove" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="28.0" right="28.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="25.0" text="Configuration">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="14.0" />
+               </padding>
+            </Label>
+            <HBox spacing="8.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label prefHeight="25.0" text="Simulator:" />
+                  <ComboBox fx:id="simulatorsComboB" prefWidth="250.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="28.0" right="28.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="8.0">
+               <children>
+                  <Label prefHeight="25.0" text="Simulation Duration:" />
+                  <TextField fx:id="nbStepsField" prefHeight="25.0" promptText="select nb iterations" />
+                  <Separator orientation="VERTICAL">
+                     <padding>
+                        <Insets left="15.0" right="15.0" />
+                     </padding>
+                  </Separator>
+                  <Label prefHeight="25.0" text="Simulation time step (in s):" />
+                  <TextField disable="true" prefHeight="25.0" promptText="select time step duration" text="1" />
+               </children>
+               <VBox.margin>
+                  <Insets left="28.0" right="28.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="25.0" text="Execution">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="14.0" />
+               </VBox.margin>
+            </Label>
+            <AnchorPane VBox.vgrow="NEVER">
+               <children>
+                  <Button fx:id="runButton" defaultButton="true" disable="true" layoutX="32.0" layoutY="34.0" mnemonicParsing="false" onAction="#onRunSimulationAction" text="Run Simulation" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="cancelButton" cancelButton="true" disable="true" layoutX="528.0" mnemonicParsing="false" text="Cancel Simulation" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="0.0" />
+                  <Label fx:id="executionLabel" alignment="CENTER" layoutX="167.0" layoutY="5.0" prefHeight="17.0" prefWidth="429.0" text="Label" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="149.0" />
+               </children>
+            </AnchorPane>
+            <ProgressBar fx:id="progressBar" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets left="28.0" right="28.0" />
+               </VBox.margin>
+            </ProgressBar>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="25.0" text="Export">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="14.0" />
+               </VBox.margin>
+            </Label>
+            <HBox maxHeight="50.0" prefWidth="200.0" spacing="8.0" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="14.0" left="28.0" right="28.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="sim2XMLButton" disable="true" mnemonicParsing="false" onAction="#onExportSimuToXML" text="Simulation to XML" />
+                  <Button fx:id="exportReportButton" disable="true" mnemonicParsing="false" onAction="#onExportReport" text="Algorithm reports" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <Label prefHeight="25.0" text="Visualization">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="14.0" />
+               </VBox.margin>
+            </Label>
+            <HBox spacing="8.0">
+               <VBox.margin>
+                  <Insets left="28.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="launchVisualizationButton" disable="true" mnemonicParsing="false" onAction="#onLaunchVisualizationButton" text="Launch TRAFFIC Visualization" />
+                  <Button fx:id="launchReportVizButton" disable="true" mnemonicParsing="false" onAction="#onLaunchReportAction" text="Launch REPORT Visualization" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <ScrollPane fx:id="consoleScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 8;" VBox.vgrow="SOMETIMES">
+               <content>
+                  <TextFlow fx:id="consoleTextFlow" style="-fx-background-color: black; -fx-background-radius: 8;">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </TextFlow>
+               </content>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

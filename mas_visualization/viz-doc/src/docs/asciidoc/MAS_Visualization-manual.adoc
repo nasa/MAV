@@ -1,0 +1,57 @@
+= MAS Visualization documentation
+Doc Writer <doc.writer@example.org>
+2016-09-09
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../java]
+
+This is a user manual for the `mas_visualization` project.
+
+[.thumb]
+image::Nasa_logo.svg[scaledwidth=75%]
+
+== Introduction
+
+*Project description*
+
+
+== Requirements
+
+// importing the readme
+This part's content is also in the project's readme file.
+
+// hum not so nice, I know...
+<<<
+include::subparts/readme.adoc[depth=2]
+
+<<<
+include::subparts/ides.adoc[depth=2]
+
+
+== Project Structure
+
+
+
+
+<<<
+include::subparts/data.adoc[]
+
+<<<
+include::subparts/core.adoc[]
+
+<<<
+include::subparts/metrics.adoc[]
+
+<<<
+include::subparts/traffic_viz.adoc[]
+
+<<<
+include::subparts/traffic_swing_viz.adoc[]
+
+<<<
+include::subparts/simu_launcher.adoc[]
+
+<<<
+include::subparts/howto.adoc[]
+

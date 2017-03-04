@@ -1,0 +1,46 @@
+=== Install Scala
+
+Install *Scala* from the http://www.scala-lang.org/[official website]
+
+=== Install SBT
+
+Install the *Scala Build Tool* @ http://www.scala-sbt.org/index.html[SBT]
+
+=== RACE
+
+This project relies on the *RACE* project @ https://github.com/NASARace/race[Git:Race]
+
+NOTE: This is a temporary patch
+
+ . Clone the `race` project: `git clone https://github.com/NASARace/race.git`
+ . run *SBT* in the root folder of the project and type `publish-local` so other projects can find the plugin in your local repository.
+
+=== JavaFX sbt plugin
+. Clone the `sbt-javafx` plugin from GitHub @ https://github.com/kavedaa/sbt-javafx[sbt-javafx]
+. Open the project in one of your IDEs,
+. Modify the `build.sbt` file so it looks like [1],
+. Open the `cross-build.sbt` file and comment the `add` line,
+. run *SBT* in the root folder of the project and type `publish-local` so other projects can find the plugin in your local repository.
+
+Build.sbt [1]
+[source,java]
+----
+    name := "sbt-javafx"
+    organization := "no.vedaadata"
+    version := "0.7.1-SNAPSHOT"
+    sbtPlugin := true
+    libraryDependencies += "org.apache.ant" % "ant" % "1.9.6"
+    publishMavenStyle := true
+    publishTo <<= version { (v: String) =>
+      val nexus = "https://oss.sonatype.org/"
+      if (v.trim.endsWith("SNAPSHOT"))
+        Some("snapshots" at nexus + "content/repositories/snapshots")
+      else
+        Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+    }
+    publishArtifact in Test := false
+    pomIncludeRepository := { _ => false }
+----
+
+IMPORTANT: If this compilation fails, the alternate solution is to unzip the plugin from the _/required_ folder to your
+`/Users/*YOU*/.ivy2/local/` folder

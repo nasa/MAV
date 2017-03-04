@@ -1,0 +1,151 @@
+= Readme
+
+== Requirements
+
+=== Install Scala
+
+Install *Scala* from the http://www.scala-lang.org/[official website]
+
+=== Install SBT
+
+Install the *Scala Build Tool* @ http://www.scala-sbt.org/index.html[SBT]
+
+
+//=== RACE
+//
+//This project relies on the *RACE* project @ https://github.com/NASARace/race[Git:Race]
+//
+//NOTE: This is a temporary patch
+//
+// . Clone the `race` project: `git clone https://github.com/NASARace/race.git`
+// . run *SBT* in the root folder of the project and type `publish-local` so other projects can find the plugin in your local repository.
+
+
+=== JavaFX sbt plugin
+. Clone the `sbt-javafx` plugin from GitHub @ https://github.com/kavedaa/sbt-javafx[sbt-javafx]
+. Open the project in one of your IDEs,
+. Modify the `build.sbt` file so it looks like [1],
+. Open the `cross-build.sbt` file and comment the `add` line,
+. run *SBT* in the root folder of the project and type `publish-local` so other projects can find the plugin in your local repository.
+
+Build.sbt [1]
+[source,java]
+----
+    name := "sbt-javafx"
+    organization := "no.vedaadata"
+    version := "0.7.1-SNAPSHOT"
+    sbtPlugin := true
+    libraryDependencies += "org.apache.ant" % "ant" % "1.9.6"
+    publishMavenStyle := true
+    publishTo <<= version { (v: String) =>
+      val nexus = "https://oss.sonatype.org/"
+      if (v.trim.endsWith("SNAPSHOT"))
+        Some("snapshots" at nexus + "content/repositories/snapshots")
+      else
+        Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+    }
+    publishArtifact in Test := false
+    pomIncludeRepository := { _ => false }
+----
+
+IMPORTANT: If this compilation fails, the alternate solution is to unzip the plugin from the _/required_ folder to your
+`/Users/*YOU*/.ivy2/local/` folder
+
+=== MAS Models project
+. Clone the *mas_models* repository
+. Open a terminal and the project folder: `mas_modesl/mas_model_code`
+. Run *SBT* by typing `sbt` in the console
+. Publish the project in your local repository by typing the following
+
+- `clean`
+- `update` (to update the dependencies)
+- `publishLocal` (the command invokes `compile`, `package`)
+
+== How to run the project
+
+=== From any terminal
+
+. Go to the appropriate folder
+. Launch *SBT* using the `sbt` command
+. To reload the project (only if changes mades to the .sbt files) type `reload`
+. To clean the project type `clean`, compile type `compile` and run: `run`
+. Refer to the <<IntelliJ>> subsections for console (same commands)
+
+NOTE: *SBT* commands can be found http://www.scala-sbt.org/0.13/docs/Command-Line-Reference.html[here]
+
+=== Eclipse
+
+CAUTION: Not fully working yet.
+
+The sources are recognized by the IDE, but the run part does not find the `.class` files.
+
+=== IntelliJ
+
+*This is the working IDE for the time being.*
+
+//
+==== Java Swing visualization
+
+==== In the console
+Switch to the Swing visualization project by typing in the console:
+
+[source]
+----
+    sbt
+    project vizTrafficSwing
+    run
+----
+
+The main class invoked is `atcGUI.components.ATCVisFrame`.
+
+==== From the IDE
+Right-click and `Run` the class `atcGUI.components.ATCVisFrame`
+
+//
+=== JavaFX visualization
+
+==== In the console
+Switch to the JavaFX visualization and run the project using *SBT*.
+[source]
+----
+    sbt
+    project vizTrafficSwing
+    run [optional geographyFilePath simulationConfigFilePath simulationLogFilePath]
+----
+
+The main class invoked is `gov.nasa.arc.atc.viewer.AppLauncher`.
+
+==== From the IDE
+Right-click and `Run` the class `gov.nasa.arc.atc.viewer.AppLauncher`
+
+
+//
+=== End-to-end tool
+
+==== In the console
+Switch to the simulator HMI project by typing in the *SBT* console: `project simuLauncher` ,
+and then run the main class by typing `run`.
+
+==== From the IDE
+Right-click and `Run` the class `gov.nasa.arc.atc.parametrized.ConfiguratorLauncher`
+
+== NetBeans
+
+CAUTION: Not fully working yet
+
+CAUTION: Need to comment sbt-eclipse plugin in `/project/plugins.sbt`,
+creates a conflict when generating _NetBeans_ project files.
+
+
+== Documentation
+
+IMPORTANT: The documentation generation does *NOT* relies on _SBT_ but on *GRADLE* instead.
+
+In the console:
+----
+    // go to the viz-doc folder
+
+    ./gradlew asciidoctor
+----
+
+

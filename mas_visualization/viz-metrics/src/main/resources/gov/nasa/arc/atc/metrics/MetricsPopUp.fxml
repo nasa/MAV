@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.nasa.arc.atc.metrics.SimulationMetricsController">
+   <children>
+      <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleClose" text="Close" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <VBox fx:id="vbox" maxWidth="-Infinity" minHeight="100.0" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <SplitPane dividerPositions="0.9" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <items>
+            <Accordion fx:id="accordian" minHeight="100.0" minWidth="100.0" prefWidth="650.0" />
+            <AnchorPane fx:id="anchorPane">
+               <children>
+                  <ButtonBar buttonMinWidth="60.0" AnchorPane.bottomAnchor="5.0">
+                     <buttons>
+                        <CheckBox fx:id="selectAll" maxWidth="90.0" minWidth="90.0" mnemonicParsing="false" onAction="#handleSelectAll" prefHeight="20.0" prefWidth="90.0" selected="true" text="Select All">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="deselectAll" maxWidth="90.0" minHeight="20.0" minWidth="90.0" mnemonicParsing="false" onAction="#handleDeselectAll" prefHeight="20.0" prefWidth="90.0" text="Deselect All">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="selectArrivals" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleSelectArrivals" prefWidth="100.0" selected="true" text="Select Arrivals">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="selectDepartures" maxWidth="120.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleSelectDepartures" prefWidth="120.0" selected="true" text="Select Departures">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </CheckBox>
+                     </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

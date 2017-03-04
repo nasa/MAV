@@ -1,0 +1,49 @@
+grammar Brahms;
+
+compilationUnit
+    :   packageDeclaration? importDeclaration* typeDeclaration* EOF
+    ;
+
+packageDeclaration
+    :   annotation* 'package' qualifiedName ';'
+    ;
+
+importDeclaration
+    :   'import' 'static'? qualifiedName ('.' '*')? ';'
+    ;
+
+Identifier
+    :   JavaLetter JavaLetterOrDigit*
+    ;
+
+fragment
+JavaLetter
+    :   [a-zA-Z$_] 
+    ;
+
+fragment
+JavaLetterOrDigit
+    :   [a-zA-Z0-9$_] 
+    ;
+
+//
+// Additional symbols not defined in the lexical specification
+//
+
+AT : '@';
+ELLIPSIS : '...';
+
+//
+// Whitespace and comments
+//
+
+WS  :  [ \t\r\n\u000C]+ -> skip
+    ;
+
+COMMENT
+    :   '/*' .*? '*/' -> skip
+    ;
+
+LINE_COMMENT
+    :   '//' ~[\r\n]* -> skip
+;

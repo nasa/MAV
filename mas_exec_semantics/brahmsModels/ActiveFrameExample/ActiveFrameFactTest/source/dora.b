@@ -1,0 +1,3 @@
+object dora instanceof Student{
+
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.RangeSlider?>
+
+<SplitPane dividerPositions="0.3271812080536913" prefHeight="583.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.nasa.arc.atc.metrics.imagecreation.ImageCreationConfiguratorController">
+  <items>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="8.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+               <children>
+                  <Label text="Pixel Creators">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox>
+                     <children>
+                        <ListView fx:id="pixelCreatorListView" prefHeight="200.0" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <Label text="Image Size">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="8.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Label prefHeight="27.0" text="Width:" HBox.hgrow="NEVER" />
+                        <TextField fx:id="widthTextField" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="50.0" promptText="image width" HBox.hgrow="SOMETIMES" />
+                        <Label prefHeight="27.0" text="Height:" HBox.hgrow="NEVER" />
+                        <TextField fx:id="heightTextField" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="50.0" promptText="image height" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <Label disable="true" text="Coordinates">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="mapPane" disable="true" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: black;">
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <Separator prefWidth="200.0" />
+                  <Label text="Time Selection">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox spacing="8.0" VBox.vgrow="NEVER">
+                     <children>
+                        <TextField fx:id="minTimeField" prefWidth="75.0" />
+                        <RangeSlider fx:id="timeSlider" HBox.hgrow="SOMETIMES" />
+                        <TextField fx:id="maxTimeField" prefWidth="75.0" HBox.hgrow="NEVER" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <CheckBox fx:id="backgroundOptionCheckB" mnemonicParsing="false" text="Background">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </CheckBox>
+                  <HBox spacing="8.0">
+                     <children>
+                        <Label fx:id="opacityLabel" disable="true" text="Opacity" />
+                        <Slider fx:id="opacitySlider" disable="true" majorTickUnit="0.25" max="1.0" minorTickCount="0" value="1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <CheckBox fx:id="mapBackgroundCheckB" disable="true" mnemonicParsing="false" selected="true" text="Show Map Background">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="routesCheckB" disable="true" mnemonicParsing="false" selected="true" text="Show Routes">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="waypointsCheckB" disable="true" mnemonicParsing="false" selected="true" text="Show Wayoints">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="sectorCheckB" disable="true" mnemonicParsing="false" selected="true" text="Show Sectors">
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER_RIGHT" spacing="8.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Button alignment="CENTER_RIGHT" cancelButton="true" mnemonicParsing="false" text="Cancel" />
+                        <Button fx:id="createButton" mnemonicParsing="false" onAction="#handleCreateAction" text="Create" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="previewPane" prefHeight="420.0" prefWidth="250.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Image Preview" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <ScrollPane layoutX="15.0" layoutY="41.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="40.0">
+               <content>
+                  <Pane fx:id="previewCanvas" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+               </content>
+            </ScrollPane>
+            <Button fx:id="saveButton" layoutX="179.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleSaveAction" text="Save" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+            <ProgressBar fx:id="previewProgressB" layoutX="14.0" layoutY="382.0" prefHeight="20.0" prefWidth="161.0" progress="0.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="76.0" />
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>

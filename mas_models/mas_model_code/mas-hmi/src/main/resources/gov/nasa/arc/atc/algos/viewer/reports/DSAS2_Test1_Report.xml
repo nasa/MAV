@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<REPORTS>
+  <REPORT algorithm="TSS" nbSteps="1000" scenario="test1" stepDuration="1">
+    <ARRIVALS_IN>
+      <ARRIVALS_IN_AT time="112">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="641"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="688">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="7">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="536">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="553">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="746"/>
+      <ARRIVALS_IN_AT time="603">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="763"/>
+      <ARRIVALS_IN_AT time="204">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="733"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="671">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+    </ARRIVALS_IN>
+    <ARRIVALS_OUT>
+      <ARRIVALS_OUT_AT time="112">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="641"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="688">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="7">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="536">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="553">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="746"/>
+      <ARRIVALS_OUT_AT time="603">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="763"/>
+      <ARRIVALS_OUT_AT time="204">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="733"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="671">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+    </ARRIVALS_OUT>
+  </REPORT>
+  <REPORT algorithm="DSAS" nbSteps="1000" scenario="test1" stepDuration="1">
+    <ARRIVALS_IN>
+      <ARRIVALS_IN_AT time="112">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="641"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="688">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="7">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="536">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="553">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="746"/>
+      <ARRIVALS_IN_AT time="603">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="763"/>
+      <ARRIVALS_IN_AT time="204">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="733"/>
+      </ARRIVALS_IN_AT>
+      <ARRIVALS_IN_AT time="671">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_IN_AT>
+    </ARRIVALS_IN>
+    <ARRIVALS_OUT>
+      <ARRIVALS_OUT_AT time="112">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="688">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="7">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="536">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="553">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="746"/>
+      <ARRIVALS_OUT_AT time="603">
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="763"/>
+      <ARRIVALS_OUT_AT time="204">
+        <ARRIVAL arrivalName="A1" arrivalRunway="R" arrivalTime="536"/>
+        <ARRIVAL arrivalName="A2" arrivalRunway="R" arrivalTime="671"/>
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+      <ARRIVALS_OUT_AT time="671">
+        <ARRIVAL arrivalName="A3" arrivalRunway="R" arrivalTime="746"/>
+      </ARRIVALS_OUT_AT>
+    </ARRIVALS_OUT>
+    <DEPARTURES_IN>
+      <DEPARTURES_IN_AT time="112">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="653" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="703" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="688">
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="7">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="544" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="549" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="554" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="559" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="536">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="553">
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="746">
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="603">
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="763"/>
+      <DEPARTURES_IN_AT time="204">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="738" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+      <DEPARTURES_IN_AT time="671">
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_IN_AT>
+    </DEPARTURES_IN>
+    <DEPARTURES_OUT>
+      <DEPARTURES_OUT_AT time="112">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="738" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="688">
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="7">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="653" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="703" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="536">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="553">
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="746">
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="603">
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="763"/>
+      <DEPARTURES_OUT_AT time="204">
+        <DEPARTURE arrivalName="D1" arrivalRunway="D1" currentDepartureTime="553" originalDepartureTime="544"/>
+        <DEPARTURE arrivalName="D2" arrivalRunway="D2" currentDepartureTime="603" originalDepartureTime="549"/>
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+      <DEPARTURES_OUT_AT time="671">
+        <DEPARTURE arrivalName="D3" arrivalRunway="D3" currentDepartureTime="688" originalDepartureTime="554"/>
+        <DEPARTURE arrivalName="D4" arrivalRunway="D4" currentDepartureTime="763" originalDepartureTime="559"/>
+      </DEPARTURES_OUT_AT>
+    </DEPARTURES_OUT>
+  </REPORT>
+</REPORTS>

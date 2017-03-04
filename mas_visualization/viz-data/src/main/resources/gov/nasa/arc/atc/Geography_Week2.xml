@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GEOGRAPHY>
+  <Waypoints>
+    <waypoint latitude="40.78528" longitude="-73.87055" name="LGA22"/>
+    <waypoint latitude="40.78528" longitude="-73.87055" name="LGA04"/>
+    <waypoint latitude="40.78528" longitude="-73.87055" name="LGA13"/>
+    <waypoint latitude="40.78528" longitude="-73.87055" name="LGA31"/>
+    <waypoint latitude="38.9475" longitude="-77.46" name="IAD01R"/>
+    <waypoint latitude="40.52222" longitude="-75.03722" name="AWARE"/>
+    <waypoint latitude="39.97167" longitude="-74.82694" name="HOLEY"/>
+    <waypoint latitude="40.76333" longitude="-75.60056" name="VIBES"/>
+    <waypoint latitude="41.19278" longitude="-73.6625" name="ELZEE"/>
+    <waypoint latitude="39.67639" longitude="-75.1125" name="BESSI"/>
+    <waypoint latitude="39.08472" longitude="-77.45778" name="CIREP"/>
+    <waypoint latitude="39.05806" longitude="-75.74611" name="SPEAK"/>
+    <waypoint latitude="40.81222" longitude="-73.69305" name="EVANZ"/>
+    <waypoint latitude="39.50611" longitude="-75.27194" name="SKIPY"/>
+    <waypoint latitude="39.9225" longitude="-74.89722" name="DAVYS"/>
+    <waypoint latitude="40.89333" longitude="-73.92278" name="KUTMI"/>
+    <waypoint latitude="40.86555" longitude="-73.80444" name="GREKO"/>
+    <waypoint latitude="45.47055" longitude="-73.74084" name="CYUL"/>
+    <waypoint latitude="39.84861" longitude="-74.96389" name="EDJER"/>
+    <waypoint latitude="40.75945" longitude="-73.7575" name="CARAA"/>
+    <waypoint latitude="35.87778" longitude="-78.7875" name="KRDU"/>
+    <waypoint latitude="39.1025" longitude="-76.85833" name="FATIR"/>
+    <waypoint latitude="40.78833" longitude="-73.89056" name="KWANN"/>
+    <waypoint latitude="44.88194" longitude="-93.22166" name="KMSP"/>
+    <waypoint latitude="40.79972" longitude="-75.74639" name="BILEY"/>
+    <waypoint latitude="41.23472" longitude="-73.70028" name="DOSWL"/>
+    <waypoint latitude="40.91639" longitude="-77.99277" name="PSB"/>
+    <waypoint latitude="40.6975" longitude="-74.0075" name="VASTI"/>
+    <waypoint latitude="40.2025" longitude="-74.495" name="RBV"/>
+    <waypoint latitude="41.43528" longitude="-73.88167" name="VALRE" isMeterFix="true"/>
+    <waypoint latitude="40.035" longitude="-74.73611" name="BRAND"/>
+    <waypoint latitude="40.71417" longitude="-73.91472" name="ARRYA"/>
+    <waypoint latitude="41.11639" longitude="-73.59361" name="HAARP"/>
+    <waypoint latitude="40.91889" longitude="-76.23167" name="MARRC"/>
+    <waypoint latitude="41.02333" longitude="-76.66528" name="MIP"/>
+    <waypoint latitude="41.98167" longitude="-87.90667" name="KORD"/>
+    <waypoint latitude="38.01361" longitude="-78.15305" name="GVE"/>
+    <waypoint latitude="39.71722" longitude="-86.29472" name="KIND"/>
+    <waypoint latitude="40.30194" longitude="-74.69917" name="HAYER"/>
+    <waypoint latitude="40.8475" longitude="-73.66389" name="MIRRA"/>
+    <waypoint latitude="38.94305" longitude="-75.78972" name="RIDGY"/>
+    <waypoint latitude="40.22972" longitude="-74.46056" name="SHVAL"/>
+    <waypoint latitude="41.34361" longitude="-73.79861" name="BASYE"/>
+    <waypoint latitude="39.00528" longitude="-77.43528" name="FUREE"/>
+    <waypoint latitude="35.21361" longitude="-80.94917" name="KCLT"/>
+    <waypoint latitude="40.375" longitude="-74.27695" name="MINKS"/>
+    <waypoint latitude="39.23167" longitude="-75.51611" name="ENO"/>
+    <waypoint latitude="39.14695" longitude="-77.45667" name="ARKAY"/>
+    <waypoint latitude="40.29389" longitude="-74.49361" name="COSTL"/>
+    <waypoint latitude="41.93917" longitude="-72.68333" name="BDL"/>
+    <waypoint latitude="41.0675" longitude="-74.53833" name="SAX"/>
+    <waypoint latitude="38.28778" longitude="-76.40028" name="PXT"/>
+    <waypoint latitude="40.46444" longitude="-74.16389" name="RABBA"/>
+    <waypoint latitude="40.63306" longitude="-74.04056" name="CONIL"/>
+    <waypoint latitude="38.09972" longitude="-76.66417" name="COLIN"/>
+    <waypoint latitude="38.69444" longitude="-76.02278" name="GARED"/>
+    <waypoint latitude="39.99805" longitude="-82.89194" name="KCMH"/>
+    <waypoint latitude="41.69528" longitude="-77.42" name="SFK"/>
+    <waypoint latitude="40.28944" longitude="-74.385" name="TYKES"/>
+    <waypoint latitude="39.02806" longitude="-76.37278" name="PALEO"/>
+    <waypoint latitude="40.90055" longitude="-73.77528" name="OMAAR"/>
+    <waypoint latitude="28.42945" longitude="-81.30889" name="KMCO"/>
+    <waypoint latitude="40.51861" longitude="-74.09417" name="RENUE"/>
+    <waypoint latitude="40.93694" longitude="-73.745" name="YOMAN"/>
+    <waypoint latitude="40.39667" longitude="-74.90861" name="FOLAM"/>
+    <waypoint latitude="40.81361" longitude="-73.84722" name="KYLIE"/>
+    <waypoint latitude="41.66555" longitude="-73.82222" name="IGN"/>
+    <waypoint latitude="40.09389" longitude="-74.65166" name="KORRY" isMeterFix="true"/>
+    <waypoint latitude="30.49417" longitude="-81.68777" name="KJAX"/>
+    <waypoint latitude="39.17778" longitude="-77.28167" name="RAISN"/>
+    <waypoint latitude="39.04361" longitude="-76.06973" name="AGARD"/>
+    <waypoint latitude="41.215" longitude="-78.14278" name="ETG"/>
+    <waypoint latitude="41.27139" longitude="-73.73583" name="FODAK"/>
+    <waypoint latitude="40.87333" longitude="-73.96472" name="THRON"/>
+    <waypoint latitude="40.60611" longitude="-75.15056" name="FINSI" isMeterFix="true"/>
+    <waypoint latitude="40.72667" longitude="-75.45472" name="FJC"/>
+    <waypoint latitude="41.01" longitude="-73.68195" name="FAMMA"/>
+  </Waypoints>
+  <Airports>
+    <airport latitude="40.78528" longitude="-73.87055" name="LGA">
+      <runway name="LGA22" qfu="22"/>
+      <runway name="LGA04" qfu="4"/>
+      <runway name="LGA13" qfu="13"/>
+      <runway name="LGA31" qfu="31"/>
+    </airport>
+    <airport latitude="40.639722" longitude="-73.778889" name="JFK">
+      <runway name="JFK04L" qfu="4"/>
+      <runway name="JFK04R" qfu="4"/>
+      <runway name="JFK22L" qfu="22"/>
+      <runway name="JFK22R" qfu="22"/>
+      <runway name="JFK13L" qfu="13"/>
+      <runway name="JFK13R" qfu="13"/>
+      <runway name="JFK31L" qfu="31"/>
+      <runway name="JFK31R" qfu="31"/>
+    </airport>
+    <airport latitude="40.6925" longitude="-74.168611" name="EWR">
+      <runway name="EWR04L" qfu="4"/>
+      <runway name="EWR04R" qfu="4"/>
+      <runway name="EWR22L" qfu="22"/>
+      <runway name="EWR22R" qfu="22"/>
+      <runway name="EWR11" qfu="11"/>
+      <runway name="EWR29" qfu="29"/>
+    </airport>
+    <airport latitude="35.213889" longitude="-80.943056" name="CLT">
+      <runway name="CLT05" qfu="5"/>
+      <runway name="CLT23" qfu="23"/>
+      <runway name="CLT18L" qfu="18"/>
+      <runway name="CLT18C" qfu="18"/>
+      <runway name="CLT18R" qfu="18"/>
+      <runway name="CLT36L" qfu="36"/>
+      <runway name="CLT36C" qfu="36"/>
+      <runway name="CLT36R" qfu="36"/>
+    </airport>
+    <airport latitude="42.363056" longitude="-71.006389" name="BOS">
+    <!-- NOT COMPLETE -->
+      <runway name="BOS22" qfu="22"/>
+      <runway name="BOS15" qfu="15"/>
+      <runway name="BOS14" qfu="14"/>
+      <runway name="BOS04" qfu="4"/>
+      <runway name="BOS09" qfu="9"/>
+      <runway name="BOS33" qfu="33"/>
+      <runway name="BOS27" qfu="27"/>
+    </airport>
+    <airport latitude="39.871944" longitude="-75.241111" name="PHL">
+    <!-- NOT COMPLETE -->
+      <runway name="PHL09" qfu="9"/>
+      <runway name="PHL17" qfu="17"/>
+      <runway name="PHL08" qfu="8"/>
+      <runway name="PHL26" qfu="26"/>
+      <runway name="PH27L" qfu="27"/>
+      <runway name="PHL35" qfu="35"/>
+    </airport>
+    <airport latitude="39.175278" longitude="-76.668333" name="BWI">
+    <!-- NOT COMPLETE -->
+      <runway name="BWI10" qfu="10"/>
+      <runway name="BWI15" qfu="15"/>
+      <runway name="BWI33" qfu="33"/>
+      <runway name="BWI28" qfu="28"/>
+    </airport>
+    <airport latitude="38.852222" longitude="-77.037778" name="DCA">
+    <!-- NOT COMPLETE -->
+      <runway name="DCA19" qfu="19"/>
+      <runway name="DCA22" qfu="22"/>
+      <runway name="DCA33" qfu="33"/>
+      <runway name="DCA01" qfu="1"/>
+      <runway name="DCA01" qfu="4"/>
+      <runway name="DCA15" qfu="15"/>
+    </airport>
+  </Airports>
+  <Sectors/>
+  <Arrivals>
+    <arrival name="LGA22"/>
+    <arrival name="LGA04"/>
+    <arrival name="LGA13"/>
+    <arrival name="LGA31"/>
+  </Arrivals>
+  <Departures>
+    <departure name="LGA22"/>
+    <departure name="LGA04"/>
+    <departure name="LGA13"/>
+    <departure name="LGA31"/>
+  </Departures>
+  <Segments>
+    <segment fromWaypoint="RABBA" toWaypoint="RENUE"/>
+    <segment fromWaypoint="EVANZ" toWaypoint="MIRRA"/>
+    <segment fromWaypoint="VASTI" toWaypoint="ARRYA"/>
+    <segment fromWaypoint="RENUE" toWaypoint="CONIL"/>
+    <segment fromWaypoint="FJC" toWaypoint="FINSI"/>
+    <segment fromWaypoint="SKIPY" toWaypoint="BESSI"/>
+    <segment fromWaypoint="KWANN" toWaypoint="THRON"/>
+    <segment fromWaypoint="AWARE" toWaypoint="FOLAM"/>
+    <segment fromWaypoint="BASYE" toWaypoint="FODAK"/>
+    <segment fromWaypoint="MIP" toWaypoint="MARRC"/>
+    <segment fromWaypoint="KORRY" toWaypoint="RBV"/>
+    <segment fromWaypoint="KJAX" toWaypoint="PXT"/>
+    <segment fromWaypoint="ELZEE" toWaypoint="HAARP"/>
+    <segment fromWaypoint="CONIL" toWaypoint="VASTI"/>
+    <segment fromWaypoint="KYLIE" toWaypoint="LGA22"/>
+    <segment fromWaypoint="YOMAN" toWaypoint="OMAAR"/>
+    <segment fromWaypoint="BRAND" toWaypoint="KORRY"/>
+    <segment fromWaypoint="MINKS" toWaypoint="RABBA"/>
+    <segment fromWaypoint="HAARP" toWaypoint="FAMMA"/>
+    <segment fromWaypoint="MIRRA" toWaypoint="OMAAR"/>
+    <segment fromWaypoint="TYKES" toWaypoint="MINKS"/>
+    <segment fromWaypoint="FAMMA" toWaypoint="YOMAN"/>
+    <segment fromWaypoint="EDJER" toWaypoint="DAVYS"/>
+    <segment fromWaypoint="VIBES" toWaypoint="FJC"/>
+    <segment fromWaypoint="ARRYA" toWaypoint="CARAA"/>
+    <segment fromWaypoint="RIDGY" toWaypoint="ENO"/>
+    <segment fromWaypoint="CARAA" toWaypoint="EVANZ"/>
+    <segment fromWaypoint="ETG" toWaypoint="MIP"/>
+    <segment fromWaypoint="MARRC" toWaypoint="BILEY"/>
+    <segment fromWaypoint="LGA31" toWaypoint="KWANN"/>
+    <segment fromWaypoint="RBV" toWaypoint="SHVAL"/>
+    <segment fromWaypoint="HOLEY" toWaypoint="BRAND"/>
+    <segment fromWaypoint="IGN" toWaypoint="VALRE"/>
+    <segment fromWaypoint="COLIN" toWaypoint="GARED"/>
+    <segment fromWaypoint="PXT" toWaypoint="GARED"/>
+    <segment fromWaypoint="BILEY" toWaypoint="VIBES"/>
+    <segment fromWaypoint="FODAK" toWaypoint="DOSWL"/>
+    <segment fromWaypoint="ENO" toWaypoint="SKIPY"/>
+    <segment fromWaypoint="KWANN" toWaypoint="KUTMI"/>
+    <segment fromWaypoint="FOLAM" toWaypoint="HAYER"/>
+    <segment fromWaypoint="SHVAL" toWaypoint="TYKES"/>
+    <segment fromWaypoint="BESSI" toWaypoint="EDJER"/>
+    <segment fromWaypoint="PSB" toWaypoint="MIP"/>
+    <segment fromWaypoint="HAYER" toWaypoint="COSTL"/>
+    <segment fromWaypoint="GVE" toWaypoint="COLIN"/>
+    <segment fromWaypoint="FINSI" toWaypoint="AWARE"/>
+    <segment fromWaypoint="GREKO" toWaypoint="KYLIE"/>
+    <segment fromWaypoint="OMAAR" toWaypoint="GREKO"/>
+    <segment fromWaypoint="KWANN" toWaypoint="SAX"/>
+    <segment fromWaypoint="KORD" toWaypoint="ETG"/>
+    <segment fromWaypoint="COSTL" toWaypoint="TYKES"/>
+    <segment fromWaypoint="DAVYS" toWaypoint="HOLEY"/>
+    <segment fromWaypoint="GARED" toWaypoint="RIDGY"/>
+    <segment fromWaypoint="BDL" toWaypoint="BASYE"/>
+    <segment fromWaypoint="DOSWL" toWaypoint="ELZEE"/>
+    <segment fromWaypoint="SPEAK" toWaypoint="ENO"/>
+    <segment fromWaypoint="CYUL" toWaypoint="IGN"/>
+    <segment fromWaypoint="RAISN" toWaypoint="FATIR"/>
+    <segment fromWaypoint="FATIR" toWaypoint="PALEO"/>
+    <segment fromWaypoint="SFK" toWaypoint="MIP"/>
+    <segment fromWaypoint="VALRE" toWaypoint="BASYE"/>
+    <segment fromWaypoint="KRDU" toWaypoint="PXT"/>
+    <segment fromWaypoint="KCLT" toWaypoint="GVE"/>
+    <segment fromWaypoint="ARKAY" toWaypoint="RAISN"/>
+    <segment fromWaypoint="IAD01R" toWaypoint="FUREE"/>
+    <segment fromWaypoint="KMSP" toWaypoint="SFK"/>
+    <segment fromWaypoint="FUREE" toWaypoint="CIREP"/>
+    <segment fromWaypoint="KCMH" toWaypoint="PSB"/>
+    <segment fromWaypoint="CIREP" toWaypoint="ARKAY"/>
+    <segment fromWaypoint="KIND" toWaypoint="ETG"/>
+    <segment fromWaypoint="AGARD" toWaypoint="SPEAK"/>
+    <segment fromWaypoint="PALEO" toWaypoint="AGARD"/>
+    <segment fromWaypoint="KMCO" toWaypoint="PXT"/>
+  </Segments>
+  <Sectors>
+    <sector name="Haarp" id="1">
+      <region minAltitude="0" maxAltitude="10000">
+        <edge latitude="41.18475863562952" longitude="-73.7761583116883" />
+        <edge latitude="41.31145039887349" longitude="-73.85529207792207" />
+        <edge latitude="41.3027262204939" longitude="-73.79989844155844" />
+        <edge latitude="41.34414868499383" longitude="-73.60733961038962" />
+        <edge latitude="41.245971464142684" longitude="-73.56777272727273" />
+        <edge latitude="41.23067723587523" longitude="-73.47808779220779" />
+        <edge latitude="41.05107022304324" longitude="-73.4728122077922" />
+        <edge latitude="40.89929963467954" longitude="-73.39895402597402" />
+        <edge latitude="40.905910496097114" longitude="-73.52556805194806" />
+        <edge latitude="40.98295563911018" longitude="-73.64954428571428" />
+        <edge latitude="40.98955251941655" longitude="-73.77352051948051" />
+      </region>
+    </sector>
+    <sector name="Final" id="2">
+      <region minAltitude="0" maxAltitude="10000">
+        <edge latitude="40.905910496097114" longitude="-73.52556805194806" />
+        <edge latitude="40.98295563911018" longitude="-73.64954428571428" />
+        <edge latitude="40.98955251941655" longitude="-73.77352051948051" />
+        <edge latitude="40.98955251941655" longitude="-73.86056766233766" />
+        <edge latitude="40.96095807010409" longitude="-73.81836298701299" />
+        <edge latitude="40.77569404956607" longitude="-73.90013454545455" />
+        <edge latitude="40.6849527033583" longitude="-73.92123688311688" />
+        <edge latitude="40.68716836740331" longitude="-73.90277233766234" />
+        <edge latitude="40.69381462112535" longitude="-73.85265428571428" />
+        <edge latitude="40.69381462112535" longitude="-73.81044961038961" />
+        <edge latitude="40.69381462112535" longitude="-73.7787961038961" />
+        <edge latitude="40.8066315605862" longitude="-73.65481987012987" />
+        <edge latitude="40.86402305152046" longitude="-73.62580415584415" />
+      </region>
+    </sector>
+      <sector name="Empyr" id="3">
+        <region minAltitude="0" maxAltitude="10000">
+            <edge latitude="40.773483305530235" longitude="-73.90013454545455" />
+            <edge latitude="40.68052100603998" longitude="-73.92387467532467" />
+            <edge latitude="40.413717171281114" longitude="-74.10588233766234" />
+            <edge latitude="40.375776275780616" longitude="-74.20875623376624" />
+            <edge latitude="40.216931019140894" longitude="-74.38548831168832" />
+            <edge latitude="40.151871103523945" longitude="-74.38548831168832" />
+            <edge latitude="40.086706979261244" longitude="-74.4224174025974" />
+            <edge latitude="40.028195308378436" longitude="-74.51474012987013" />
+            <edge latitude="40.003415121008366" longitude="-74.59914948051949" />
+            <edge latitude="40.01017484330144" longitude="-74.63871636363636" />
+            <edge latitude="39.971854977424414" longitude="-74.68883441558442" />
+            <edge latitude="40.10918914352775" longitude="-74.77851935064936" />
+            <edge latitude="40.10469370257442" longitude="-74.8602909090909" />
+            <edge latitude="40.24830198161183" longitude="-74.6967477922078" />
+            <edge latitude="40.328858805048824" longitude="-74.95788922077922" />
+            <edge latitude="40.525101226925806" longitude="-75.16099922077923" />
+            <edge latitude="40.67165613438874" longitude="-75.0713142857143" />
+            <edge latitude="40.42486946441138" longitude="-74.833912987013" />
+            <edge latitude="40.36014317531731" longitude="-74.50682675324676" />
+            <edge latitude="40.38024176374359" longitude="-74.41714181818182" />
+            <edge latitude="40.51842688298503" longitude="-74.21403181818182" />
+            <edge latitude="40.8066315605862" longitude="-74.02674857142857" />
+        </region>
+    </sector>
+  </Sectors>
+</GEOGRAPHY>

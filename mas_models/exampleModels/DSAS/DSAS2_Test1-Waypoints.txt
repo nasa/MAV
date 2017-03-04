@@ -1,0 +1,19 @@
+#       waypoints 2016/06/07		hand coded
+
+			56LGA300
+
+# on?         latitude   longitude       variation     elevation#	     (hours minutes seconds)     (east)       (at VOR)
+#
+1	A	400000	701800		0
+1	B	400000	704200		0
+1	R	400000	700000		0
+1	E	391200	700000		0
+1	F	382400	700000		0
+1	G	383600	700000		0
+1	H	394800	700000		0
+
+SECTORS
+
+SEGMENTS
+	R,A,B
+	E,F,G,H,R

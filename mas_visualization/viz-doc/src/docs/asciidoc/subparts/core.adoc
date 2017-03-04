@@ -1,0 +1,34 @@
+=== Core module
+
+IMPORTANT: depends on `viz-data`
+
+This module contains the main elements to describe the data model extracted from the scenario log files.
+
+NOTE: At the moment, the module contains the log file parsers
+but these shall ultimately be moved to the `mas_models` repository, in the `atclib`, more precisely.
+
+==== Input handled
+
+Please refer to the `viz-data` for the description of the files handled.
+
+
+==== Module architecture
+
+===== DataModelInput class
+
+This class regroups all values parsed from the log files.
+
+*Locking the data inputs*
+
+
+
+
+===== DataModel class
+
+==== Custom Logger
+
+This module contains a simple console displaying log messages and export the log in the clipboard.
+The corresponding class id `FXLogger` and provides a sub set of the logging methods from the `java.util.logging.Logger` class.
+The custom logger also logs in the Java one.
+
+This logger is by default embedded in the traffic visualization HMI (in `viz-traffic-fx`).
